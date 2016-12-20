@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`crossfields-audio-assistant`
+An assistant with an audible sound
+
+@demo demo/index.html
+-->
+
+<dom-module id="crossfields-audio-assistant">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <slot></slot>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'crossfields-audio-assistant',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'crossfields-audio-assistant',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
